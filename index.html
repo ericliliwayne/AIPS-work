@@ -9,8 +9,114 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        body{
-            background-color:deepskyblue;
+        body{ /*背景漸層動畫效果*/
+            margin: 0;
+            max-width: 100vw;
+            max-height: 100vh;
+            background-color: #e493d0 ;
+            background-image: 
+            radial-gradient(closest-side, rgb(235,105,78,0.5), rgb(235,105,78,0)),
+            radial-gradient(closest-side, rgb(243,11,164,0.5), rgb(243,11,164,0)),
+            radial-gradient(closest-side, rgb(254,234,131,0.5), rgb(254,234,131,0)),
+            radial-gradient(closest-side, rgb(170,142,245,0.5), rgb(170,142,245,0)),
+            radial-gradient(closest-side, rgb(248,192,147,0.5), rgb(248,192,147,0)),
+            radial-gradient(closest-side, rgb(248,22,247,0.5), rgb(248,192,147,0)),
+            radial-gradient(closest-side, rgb(111,192,100,0.5), rgb(248,192,147,0));
+            background-size: 
+            100vmax 80vmax,
+            90vmax 90vmax,
+            70vmax 105vmax,
+            100vmax 50vmax,
+            110vmax 15vmax,
+            -10vmax -35vmax,
+            -85vmax -90vmax;
+            background-position: 
+            90vmax 30vmax,
+            -62vmax 30vmax,
+            38vmax 50vmax,
+            -90vmax -10vmax,
+            20vmax 80vmax,
+            0vmax 0vmax,
+            -10vmax -80vmax;
+            background-repeat: no-repeat;
+            animation: 10s movement linear infinite;
+        }
+        @keyframes movement{
+            0%, 100%{
+            background-size: 
+            100vmax 80vmax,
+            90vmax 90vmax,
+            70vmax 105vmax,
+            100vmax 50vmax,
+            110vmax 15vmax,
+            -10vmax -35vmax,
+            -85vmax -90vmax;
+            background-position: 
+            90vmax 30vmax,
+            -62vmax 30vmax,
+            38vmax 50vmax,
+            -90vmax -10vmax,
+            20vmax 80vmax,
+            0vmax 0vmax,
+            -10vmax -80vmax;
+            }
+
+            25%{
+            background-size: 
+            82vmax 61vmax,
+            100vmax 80vmax,
+            66vmax 95vmax,
+            85vmax 40vmax,
+            100vmax 30vmax,
+            0vmax -45vmax,
+            -55vmax -100vmax;
+            background-position: 
+            60vmax 55vmax,
+            -32vmax 15vmax,
+            58vmax 45vmax,
+            -95vmax 10vmax,
+            -20vmax 70vmax,
+            10vmax -35vmax,
+            20vmax 25vmax;
+            }
+
+            50%{
+            background-size: 
+            102vmax 31vmax,
+            80vmax 55vmax,
+            0vmax 55vmax,
+            50vmax 80vmax,
+            95vmax 38vmax,
+            0vmax -45vmax,
+            -10vmax -80vmax;
+            background-position: 
+            85vmax 75vmax,
+            -10vmax 13vmax,
+            23vmax 20vmax,
+            -74vmax 59vmax,
+            -30vmax 10vmax,
+            -10vmax 35vmax,
+            -20vmax 22vmax;
+            }
+
+            75%{
+            background-size: 
+            111vmax 55vmax,
+            90vmax 40vmax,
+            35vmax 85vmax,
+            75vmax 58vmax,
+            40vmax 60vmax,
+            -20vmax -45vmax,
+            -55vmax -30vmax;
+            background-position: 
+            90vmax 35vmax,
+            -75vmax -15vmax,
+            58vmax 45vmax,
+            -45vmax -10vmax,
+            20vmax 40vmax,
+            -10vmax 35vmax,
+            -20vmax -25vmax;
+            }
         }
         .row2{
             display: flex;
@@ -19,18 +125,19 @@
         }
         .card:hover{
             top: -30px;
+            transform: rotate(-2deg);
         }
     </style>
     </head>
 
 <body>
     <h1 style="text-align: center;margin:10px;padding:10px">photoshop illustrator 作品集</h1>
-    <h2>photoshop 作品</h2>
+    <h2 style="padding:10px;color:darkslateblue">photoshop 作品</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6 pos mb-5"">
+            <div class="col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ps/annualcalendar.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
+                    <img src="./img/ps/messageImage_1660920750128.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
                     <div class="card-body">
                         <p class="card-text">2022年年曆</p>
                         <a href="./img/ps/annualcalendar.jpg" class="btn btn-primary" target="_blank">查看原圖</a>
@@ -39,7 +146,7 @@
             </div>
             <div class="col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ps/BANNER.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
+                    <img src="./img/ps/messageImage_1660920776311.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
                     <div class="card-body">
                         <p class="card-text">banner</p>
                         <a href="./img/ps/BANNER.jpg" class="btn btn-primary" target="_blank">查看原圖</a>
@@ -48,7 +155,7 @@
             </div>
             <div class="col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ps/poster.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
+                    <img src="./img/ps/messageImage_1660920834928.jpg" class="card-img-top p-3" width=800 height=450 alt="...">
                     <div class="card-body">
                         <p class="card-text">旅遊海報</p>
                         <a href="./img/ps/poster.jpg" class="btn btn-primary" target="_blank">查看原圖</a>
@@ -57,276 +164,276 @@
             </div>
         </div>
     </div>
-    <h2>illustrator 作品</h2>
+    <h2 style="padding:10px;color:gold">illustrator 作品</h2>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/001鯨魚.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/001.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">鯨魚</p>
-                        <a href="./img/ai/001鯨魚.png" class="btn btn-primary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/001.png" class="btn btn-primary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/002企鵝.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/002.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">企鵝</p>
-                        <a href="./img/ai/002企鵝.png" class="btn btn-success" target="_blank">查看原圖</a>
+                        <a href="./img/ai/002.png" class="btn btn-success" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/003犀牛.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/003.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">犀牛</p>
-                        <a href="./img/ai/003犀牛.png" class="btn btn-danger" target="_blank">查看原圖</a>
+                        <a href="./img/ai/003.png" class="btn btn-danger" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/004蝙蝠.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/004.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">蝙蝠</p>
-                        <a href="./img/ai/004蝙蝠.png" class="btn btn-warning" target="_blank">查看原圖</a>
+                        <a href="./img/ai/004.png" class="btn btn-warning" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/005烏龜.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/005.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">烏龜</p>
-                        <a href="./img/ai/005烏龜.png" class="btn btn-info" target="_blank">查看原圖</a>
+                        <a href="./img/ai/005.png" class="btn btn-info" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5 mt-3">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/006蝴蝶.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/006.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">蝴蝶</p>
-                        <a href="./img/ai/006蝴蝶.png" class="btn btn-secondary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/006.png" class="btn btn-secondary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/007鳥.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/007.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">鳥</p>
-                        <a href="./img/ai/007鳥.png" class="btn btn-primary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/007.png" class="btn btn-primary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/008松鼠.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/008.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">松鼠</p>
-                        <a href="./img/ai/008松鼠.png" class="btn btn-success" target="_blank">查看原圖</a>
+                        <a href="./img/ai/008.png" class="btn btn-success" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/009公雞.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/009.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">公雞</p>
-                        <a href="./img/ai/009公雞.png" class="btn btn-danger" target="_blank">查看原圖</a>
+                        <a href="./img/ai/009.png" class="btn btn-danger" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/010海馬.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/010.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">海馬</p>
-                        <a href="./img/ai/010海馬.png" class="btn btn-warning" target="_blank">查看原圖</a>
+                        <a href="./img/ai/010.png" class="btn btn-warning" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/011海象.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/011.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">海象</p>
-                        <a href="./img/ai/011海象.png" class="btn btn-info" target="_blank">查看原圖</a>
+                        <a href="./img/ai/011.png" class="btn btn-info" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/012山羊.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/012.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">山羊</p>
-                        <a href="./img/ai/012山羊.png" class="btn btn-secondary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/012.png" class="btn btn-secondary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/013大象.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/013.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">大象</p>
-                        <a href="./img/ai/013大象.png" class="btn btn-primary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/013.png" class="btn btn-primary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/014袋鼠.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/014.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">袋鼠</p>
-                        <a href="./img/ai/014袋鼠.png" class="btn btn-success" target="_blank">查看原圖</a>
+                        <a href="./img/ai/014.png" class="btn btn-success" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/015班馬.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/015.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">班馬</p>
-                        <a href="./img/ai/015班馬.png" class="btn btn-danger" target="_blank">查看原圖</a>
+                        <a href="./img/ai/015.png" class="btn btn-danger" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/016猩猩.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/016.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">猩猩</p>
-                        <a href="./img/ai/016猩猩.png" class="btn btn-warning" target="_blank">查看原圖</a>
+                        <a href="./img/ai/016.png" class="btn btn-warning" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/017變色龍.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/017.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">變色龍</p>
-                        <a href="./img/ai/017變色龍.png" class="btn btn-info" target="_blank">查看原圖</a>
+                        <a href="./img/ai/017.png" class="btn btn-info" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/018狗.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/018.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">狗</p>
-                        <a href="./img/ai/018狗.png" class="btn btn-secondary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/018.png" class="btn btn-secondary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/019狐狸.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/019.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">狐狸</p>
-                        <a href="./img/ai/019狐狸.png" class="btn btn-primary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/019.png" class="btn btn-primary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/020鯊魚.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/020.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">鯊魚</p>
-                        <a href="./img/ai/020鯊魚.png" class="btn btn-success" target="_blank">查看原圖</a>
+                        <a href="./img/ai/020.png" class="btn btn-success" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/021貓.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/021.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">貓</p>
-                        <a href="./img/ai/021貓.png" class="btn btn-danger" target="_blank">查看原圖</a>
+                        <a href="./img/ai/021.png" class="btn btn-danger" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/022貓頭鷹.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/022.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">貓頭鷹</p>
-                        <a href="./img/ai/022貓頭鷹.png" class="btn btn-warning" target="_blank">查看原圖</a>
+                        <a href="./img/ai/022.png" class="btn btn-warning" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/023蜂鳥.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/023.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">蜂鳥</p>
-                        <a href="./img/ai/023蜂鳥.png" class="btn btn-info" target="_blank">查看原圖</a>
+                        <a href="./img/ai/023.png" class="btn btn-info" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/024熊.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/024.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">熊</p>
-                        <a href="./img/ai/024熊.png" class="btn btn-secondary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/024.png" class="btn btn-secondary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/025紅鶴.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/025.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">紅鶴</p>
-                        <a href="./img/ai/025紅鶴.png" class="btn btn-primary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/025.png" class="btn btn-primary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/026老鼠.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/026.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">老鼠</p>
-                        <a href="./img/ai/026老鼠.png" class="btn btn-success" target="_blank">查看原圖</a>
+                        <a href="./img/ai/026.png" class="btn btn-success" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/027鴨子.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/027.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">鴨子</p>
-                        <a href="./img/ai/027鴨子.png" class="btn btn-danger" target="_blank">查看原圖</a>
+                        <a href="./img/ai/027.png" class="btn btn-danger" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/028海豚.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/028.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">海豚</p>
-                        <a href="./img/ai/028海豚.png" class="btn btn-warning" target="_blank">查看原圖</a>
+                        <a href="./img/ai/028.png" class="btn btn-warning" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/029兔子.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/029.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">兔子</p>
-                        <a href="./img/ai/029兔子.png" class="btn btn-info" target="_blank">查看原圖</a>
+                        <a href="./img/ai/029.png" class="btn btn-info" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 pos mb-5">
                 <div class="card bg-light" style="width: 18rem;">
-                    <img src="./img/ai/030河馬.png" class="card-img-top p-3" width=250 height=280 alt="...">
+                    <img src="./img/ai/030.png" class="card-img-top p-3" width=250 height=280 alt="...">
                     <div class="card-body">
                         <p class="card-text">河馬</p>
-                        <a href="./img/ai/030河馬.png" class="btn btn-secondary" target="_blank">查看原圖</a>
+                        <a href="./img/ai/030.png" class="btn btn-secondary" target="_blank">查看原圖</a>
                     </div>
                 </div>
             </div>
